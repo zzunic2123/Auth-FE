@@ -10,7 +10,7 @@ const App: React.FC = () => {
     useEffect(() => {
         const fetchTicketCount = async () => {
             try {
-                const response = await fetch('https://be-fer-nrppw-linux-ew-ascjaqcfa9d6c8ff.westeurope-01.azurewebsites.net/api/Ticket/GetTicketCount');
+                const response = await fetch('https://be-fer-nrppw-windows-ew-g6h2ghb6gkajhxcj.westeurope-01.azurewebsites.net/api/Ticket/GetTicketCount');
                 const data = await response.json();
                 setTicketCount(data.ticketCount);
             } catch (error) {

@@ -7,7 +7,7 @@ const TicketForm: React.FC = () => {
     const [qrCode, setQrCode] = useState<string | null>(null);
 
     const getAuthToken = async () => {
-        const response = await fetch('https://be-fer-nrppw-linux-ew-ascjaqcfa9d6c8ff.westeurope-01.azurewebsites.net/api/Ticket/getAuthToken');
+        const response = await fetch('https://be-fer-nrppw-windows-ew-g6h2ghb6gkajhxcj.westeurope-01.azurewebsites.net/api/Ticket/getAuthToken');
         const data = await response.json();
         console.log(data);
         return data.access_token;
@@ -20,7 +20,7 @@ const TicketForm: React.FC = () => {
         try {
             const token = await getAuthToken();
 
-            const response = await fetch('https://be-fer-nrppw-linux-ew-ascjaqcfa9d6c8ff.westeurope-01.azurewebsites.net/api/Ticket/GenerateTicket', {
+            const response = await fetch('https://be-fer-nrppw-windows-ew-g6h2ghb6gkajhxcj.westeurope-01.azurewebsites.net/api/Ticket/GenerateTicket', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
