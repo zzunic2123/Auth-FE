@@ -42,7 +42,7 @@ const TicketForm: React.FC = () => {
 
     return (
         <div>
-            <h2>Generate  Ticket</h2>
+            <h2>Generate Ticket</h2>
             <form onSubmit={handleSubmit}>
                 <input
                     type="text"
