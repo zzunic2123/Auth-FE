@@ -25,7 +25,7 @@ const TicketDetails: React.FC = () => {
             });
 
             if (!response.ok) {
-                throw new Error(`Failed to fetch ticket details: ${response.statusText}`);
+                throw new  Error(`Failed to fetch ticket details: ${response.statusText}`);
             }
 
             const data = await response.json();
